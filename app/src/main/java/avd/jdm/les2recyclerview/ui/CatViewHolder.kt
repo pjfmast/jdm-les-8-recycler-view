@@ -1,11 +1,8 @@
 package avd.jdm.les2recyclerview.ui
 
-import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
-import avd.jdm.les2recyclerview.R
+import avd.jdm.les2recyclerview.databinding.ItemCatBinding
 import avd.jdm.les2recyclerview.model.CatBreed
 import avd.jdm.les2recyclerview.model.CatUiModel
 import avd.jdm.les2recyclerview.model.Gender
@@ -19,19 +16,16 @@ private val MALE_SYMBOL by lazy {
 private const val UNKNOWN_SYMBOL = "?"
 
 class CatViewHolder(
-    containerView: View,
+    itemCatBinding: ItemCatBinding,
     private val imageLoader: ImageLoader
-) : RecyclerView.ViewHolder(containerView) {
-    private val catBiographyView: TextView
-            by lazy { containerView.findViewById(R.id.item_cat_biography) }
-    private val catBreedView: TextView
-            by lazy { containerView.findViewById(R.id.item_cat_breed) }
-    private val catGenderView: TextView
-            by lazy { containerView.findViewById(R.id.item_cat_gender) }
-    private val catNameView: TextView
-            by lazy { containerView.findViewById(R.id.item_cat_name) }
-    private val catPhotoView: ImageView
-            by lazy { containerView.findViewById(R.id.item_cat_photo) }
+) : RecyclerView.ViewHolder(itemCatBinding.root) {
+
+    private val catBiographyView = itemCatBinding.itemCatBiography
+    private val catBreedView = itemCatBinding.itemCatBreed
+    private val catGenderView = itemCatBinding.itemCatGender
+    private val catNameView = itemCatBinding.itemCatName
+    private val catPhotoView = itemCatBinding.itemCatPhoto
+
 
     fun bindData(catData: CatUiModel) {
         imageLoader.loadImage(catData.imageUrl, catPhotoView)

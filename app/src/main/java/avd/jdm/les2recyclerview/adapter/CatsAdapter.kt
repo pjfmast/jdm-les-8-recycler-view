@@ -3,14 +3,13 @@ package avd.jdm.les2recyclerview.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import avd.jdm.les2recyclerview.R
+import avd.jdm.les2recyclerview.databinding.ItemCatBinding
 import avd.jdm.les2recyclerview.model.CatUiModel
 import avd.jdm.les2recyclerview.ui.CatViewHolder
 import avd.jdm.les2recyclerview.ui.ImageLoader
 
 
 class CatsAdapter(
-    private val layoutInflater: LayoutInflater,
     private val imageLoader: ImageLoader
 ) : RecyclerView.Adapter<CatViewHolder>() {
     private val catsData = mutableListOf<CatUiModel>()
@@ -21,8 +20,8 @@ class CatsAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CatViewHolder {
-        val view = layoutInflater.inflate(R.layout.item_cat, parent, false)
-        return CatViewHolder(view, imageLoader)
+        val itemCatBinding = ItemCatBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return CatViewHolder(itemCatBinding, imageLoader)
     }
 
     override fun onBindViewHolder(holder: CatViewHolder, position: Int) {

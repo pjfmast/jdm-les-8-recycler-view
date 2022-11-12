@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
 import avd.jdm.les2recyclerview.R
+import avd.jdm.les2recyclerview.databinding.ItemEmployeeBinding
 import avd.jdm.les2recyclerview.model.EmployeeRole
 import avd.jdm.les2recyclerview.model.EmployeeUiModel
 import avd.jdm.les2recyclerview.model.Gender
@@ -21,19 +22,14 @@ private val MALE_SYMBOL by lazy {
 private const val UNKNOWN_SYMBOL = "?"
 
 class EmployeeViewHolder(
-    containerView: View,
+    itemEmployeeBinding: ItemEmployeeBinding,
     private val imageLoader: ImageLoader
-) : RecyclerView.ViewHolder(containerView) {
-    private val employeeNameView: TextView
-            by lazy { containerView.findViewById(R.id.item_employee_name) }
-    private val employeeRoleView: TextView
-            by lazy { containerView.findViewById(R.id.item_employee_role) }
-    private val employeeBioView: TextView
-            by lazy { containerView.findViewById(R.id.item_employee_biography) }
-    private val employeeGenderView: TextView
-            by lazy { containerView.findViewById(R.id.item_employee_gender) }
-    private val employeePhotoView: ImageView
-            by lazy { containerView.findViewById(R.id.item_employee_photo) }
+) : RecyclerView.ViewHolder(itemEmployeeBinding.root) {
+    private val employeeNameView: TextView = itemEmployeeBinding.itemEmployeeName
+    private val employeeRoleView: TextView = itemEmployeeBinding.itemEmployeeRole
+    private val employeeBioView: TextView = itemEmployeeBinding.itemEmployeeBiography
+    private val employeeGenderView: TextView = itemEmployeeBinding.itemEmployeeGender
+    private val employeePhotoView: ImageView = itemEmployeeBinding.itemEmployeePhoto
 
     fun bindData(employeeData: EmployeeUiModel) {
         imageLoader.loadImage(employeeData.imageUrl, employeePhotoView)
