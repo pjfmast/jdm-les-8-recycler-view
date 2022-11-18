@@ -6,6 +6,7 @@ import avd.jdm.les2recyclerview.databinding.ItemCatBinding
 import avd.jdm.les2recyclerview.model.CatBreed
 import avd.jdm.les2recyclerview.model.CatUiModel
 import avd.jdm.les2recyclerview.model.Gender
+import avd.jdm.les2recyclerview.util.ImageLoader
 
 private val FEMALE_SYMBOL by lazy {
     HtmlCompat.fromHtml("&#9793;", HtmlCompat.FROM_HTML_MODE_LEGACY)

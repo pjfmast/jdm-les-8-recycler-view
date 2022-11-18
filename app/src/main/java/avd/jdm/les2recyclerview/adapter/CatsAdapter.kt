@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import avd.jdm.les2recyclerview.databinding.ItemCatBinding
 import avd.jdm.les2recyclerview.model.CatUiModel
 import avd.jdm.les2recyclerview.ui.CatViewHolder
-import avd.jdm.les2recyclerview.ui.ImageLoader
+import avd.jdm.les2recyclerview.util.ImageLoader
 
 
 class CatsAdapter(

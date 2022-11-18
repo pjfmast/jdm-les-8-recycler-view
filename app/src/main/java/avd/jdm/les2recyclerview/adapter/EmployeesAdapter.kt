@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import avd.jdm.les2recyclerview.databinding.ItemEmployeeBinding
 import avd.jdm.les2recyclerview.model.EmployeeUiModel
 import avd.jdm.les2recyclerview.ui.EmployeeViewHolder
-import avd.jdm.les2recyclerview.ui.ImageLoader
+import avd.jdm.les2recyclerview.util.ImageLoader
 
 class EmployeesAdapter(
     private val imageLoader: ImageLoader

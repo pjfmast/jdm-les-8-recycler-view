@@ -3,4 +3,7 @@
     <string name="item_employee_photo">item employee photo</string>
     <string name="item_cat_photo">item cat photo</string>
     <string name="my_recycleview">My RecycleView!</string>
+
+    <string name="poster_of_movie">poster of movie</string>
+
 </resources>

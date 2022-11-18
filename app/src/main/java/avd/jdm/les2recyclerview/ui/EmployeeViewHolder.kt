@@ -1,15 +1,14 @@
 package avd.jdm.les2recyclerview.ui
 
-import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
-import avd.jdm.les2recyclerview.R
 import avd.jdm.les2recyclerview.databinding.ItemEmployeeBinding
 import avd.jdm.les2recyclerview.model.EmployeeRole
 import avd.jdm.les2recyclerview.model.EmployeeUiModel
 import avd.jdm.les2recyclerview.model.Gender
+import avd.jdm.les2recyclerview.util.ImageLoader
 
 
 private val FEMALE_SYMBOL by lazy {

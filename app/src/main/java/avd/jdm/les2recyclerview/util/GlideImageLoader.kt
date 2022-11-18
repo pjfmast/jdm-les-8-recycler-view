@@ -1,4 +1,4 @@
-package avd.jdm.les2recyclerview.ui
+package avd.jdm.les2recyclerview.util
 
 import android.content.Context
 import android.widget.ImageView

@@ -54,4 +54,175 @@ class TestDatasources {
             )
         )
     }
+    fun loadMovies(): List<MovieUiModel> {
+        return listOf(
+            MovieUiModel(
+                "Les Olympiades, Paris 13e",
+                2021,
+                "tt7150060",
+                "TV series",
+                "https://m.media-amazon.com/images/I/51emksO0KXL._AC_.jpg"
+            ),MovieUiModel(
+                "Find me in Paris",
+                2018,
+                "tt7150060",
+                "TV series",
+                "https://m.media-amazon.com/images/I/81loQXu0WeL._AC_SY741_.jpg"
+            ),
+            MovieUiModel(
+                "Mrs. Harris Goes to Paris",
+                2022,
+                "tt5151570",
+                "movie",
+                "https://m.media-amazon.com/images/I/71NBkEHEAvL.__AC_SX300_SY300_QL70_ML2_.jpg"
+            ),
+            MovieUiModel(
+                "Midnight in Paris",
+                2011,
+                "tt1605783",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTM4NjY1MDQwMl5BMl5BanBnXkFtZTcwNTI3Njg3NA@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "From Paris with Love",
+                2010,
+                "tt1179034",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BODAwMDFjNjktMWY2Mi00MmVhLWI0MjYtNzg4OTI0NzA5YzBjXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Paris, Texas",
+                1984,
+                "tt0087884",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BM2RjMmU3ZWItYzBlMy00ZmJkLWE5YzgtNTVkODdhOWM3NGZhXkEyXkFqcGdeQXVyNDA5Mjg5MjA@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Paris, je t'aime",
+                2006,
+                "tt0401711",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTc1MDgwNDE4MF5BMl5BanBnXkFtZTcwMTQzMzc0MQ@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Emily in Paris",
+                2020,
+                "tt8962124",
+                "series",
+                "https://m.media-amazon.com/images/M/MV5BYTFjZjQzZDgtOWEyNy00YmY1LTgyYjQtMTBlODUxZTBiZWRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "An American in Paris",
+                1951,
+                "tt0043278",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMzFkNGM0YTUtZjY5Ny00NzBkLWE1NTAtYzUxNjUyZmJlODMwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "The 15:17 to Paris",
+                2018,
+                "tt6802308",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTY0NjUzNjYwOV5BMl5BanBnXkFtZTgwMzY1MDM0NDM@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "2 Days in Paris",
+                2007,
+                "tt0841044",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMjAyNTY3NTcyOF5BMl5BanBnXkFtZTcwMTcyMjM1MQ@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Un monstre à Paris",
+                2001,
+                "tt0961097",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTgxNTg3MTE1NF5BMl5BanBnXkFtZTcwODI4NzgzNw@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "An American Werewolf in Paris",
+                1997,
+                "tt0118604",
+                "movie",
+                "https://m.media-amazon.com/images/I/51fBtD9oP7L._AC_.jpg"
+            ),      MovieUiModel(
+                "Midnight in Paris",
+                2011,
+                "tt1605783",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTM4NjY1MDQwMl5BMl5BanBnXkFtZTcwNTI3Njg3NA@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "From Paris with Love",
+                2010,
+                "tt1179034",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BODAwMDFjNjktMWY2Mi00MmVhLWI0MjYtNzg4OTI0NzA5YzBjXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Paris, Texas",
+                1984,
+                "tt0087884",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BM2RjMmU3ZWItYzBlMy00ZmJkLWE5YzgtNTVkODdhOWM3NGZhXkEyXkFqcGdeQXVyNDA5Mjg5MjA@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Paris, je t'aime",
+                2006,
+                "tt0401711",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTc1MDgwNDE4MF5BMl5BanBnXkFtZTcwMTQzMzc0MQ@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Emily in Paris",
+                2020,
+                "tt8962124",
+                "series",
+                "https://m.media-amazon.com/images/M/MV5BYTFjZjQzZDgtOWEyNy00YmY1LTgyYjQtMTBlODUxZTBiZWRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "An American in Paris2",
+                1951,
+                "tt0043278",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMzFkNGM0YTUtZjY5Ny00NzBkLWE1NTAtYzUxNjUyZmJlODMwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "The 15:17 to Paris2",
+                2018,
+                "tt6802308",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTY0NjUzNjYwOV5BMl5BanBnXkFtZTgwMzY1MDM0NDM@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "2 Days in Paris2",
+                2007,
+                "tt0841044",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMjAyNTY3NTcyOF5BMl5BanBnXkFtZTcwMTcyMjM1MQ@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Un monstre à Paris2",
+                2001,
+                "tt0961097",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BMTgxNTg3MTE1NF5BMl5BanBnXkFtZTcwODI4NzgzNw@@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "An American Werewolf in Paris2",
+                1997,
+                "tt0118604",
+                "movie",
+                "https://m.media-amazon.com/images/M/MV5BOGU0ZmE5NzUtYWY0Yi00NDZjLWI4Y2UtZDdkNDFjMmNkM2MxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+            ),
+            MovieUiModel(
+                "Not found movie of Paris",
+                2099,
+                "ttxyz",
+                "movie",
+                "https://notaparismovie/images/noimage"
+            ),
+
+            )
+    }
 }
